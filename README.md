@@ -91,12 +91,52 @@ arrayName.shift(); --> will remove the first item in the array
 #Loops:------------------------------------------------------------------------
 Loops allow you to do repeated actions/ blocks of code which depend on the conditional being TRUE
 While loop: will continue to do the repeated actions WHILE the condition is true
-ex. while(hungry) {
-  keep eating
+ex.
+let index = 0;
+const max = 10
+//while loop
+while (index < max) {
+  log ('in while loop:', index);
+  index++;   --> this increments the index so it doesn't get stuck in an infinite loop
 }
 
 
-For loop - We tend to use these FOR a number of times
+
+For loop - We tend to use these FOR a number of times - think 'for a number of times', or 'for a number of items'
+a couple ways to do this:
+
+for loops:
+
+for (let i=0(creating the variable i); i<max(creating the condition); i++(incrementing what I is so it isn't an infinite loop)) {
+ log ('in for loop'. i:', i); --> should show 'in for loop. I: 0' and then 'in for loop. I: 1' and then etc. printed in the console
+}//end for
+
+ex:
+loop through an array and find match:
+ex. hand of cards
+let hand = ['q', '3', 'j', '9', '6', 'k', 'A'];
+for(let i=0; i<hand.lenght; i++) {
+  log ('for loop', hand[i]); --> will log Q, 3, J, 9, 6, K, A
+  if(hand [i] === '9') {
+    log ('match'); --> will log Q, 3, J, 9, match, 6, k, A
+  }
+}// end for
+
+
+for in:
+does almost the same thing as the for loop but a little less code.
+ex:
+for(i in hand) {
+  log( 'for in loop', hand[i]);
+}
+--> should show the same as for loop - for in loop Q, for in loop 3, for in loop J, etc. until all items are printed in the log one line after another
+
+
+
+
+for of:
+
+
 
 
 
