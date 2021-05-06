@@ -144,7 +144,26 @@ for(card of hand) {
 
 
 #Functions:
+functions are a callable and repeatable stack of code. so if there is every a set of commands
+you want to run more than once, wrapping it inside a function is a good way to do that
 
+functions have parameters
+ex.
+function fillMugWith (coffee (this is the parameter));
+
+function that takes no arguments:
+function logger() {
+  log ('in logger'); --> will show you are in the function 'looper'
+
+}// end logger
+
+function returner() {
+  log('in returner'); --> when this function is called, it will show 'in returner'
+  return true; --> this ends the function
+}
+ logger(); --> will show 'in logger'
+ returner(); --> will show 'in returner'
+ log('running returner:', returner()); --> will show 'running returner: true'
 
 
 
