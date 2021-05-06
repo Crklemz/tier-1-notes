@@ -123,21 +123,24 @@ for(let i=0; i<hand.lenght; i++) {
 }// end for
 
 
-for in:
+for in: --> dealing with index
 does almost the same thing as the for loop but a little less code.
 ex:
 for(i in hand) {
-  log( 'for in loop', hand[i]);
+  log( 'for in loop', hand[i]); --> this is still using the index, hence the [i]
 }
 --> should show the same as for loop - for in loop Q, for in loop 3, for in loop J, etc. until all items are printed in the log one line after another
 
 
 
 
-for of:
-
-
-
+for of: --> dealing with what's inside the index
+rather than giving the index, it gives the object itself.
+ex.
+for(card of hand) {
+  log( 'for of loop', card);
+}
+--> should show - for of loop, Q, for of loop 3, etc.
 
 
 #Functions:
