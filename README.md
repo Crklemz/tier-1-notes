@@ -89,7 +89,14 @@ arrayName.shift(); --> will remove the first item in the array
 
 
 #Loops:------------------------------------------------------------------------
+Loops allow you to do repeated actions/ blocks of code which depend on the conditional being TRUE
+While loop: will continue to do the repeated actions WHILE the condition is true
+ex. while(hungry) {
+  keep eating
+}
 
+
+For loop - We tend to use these FOR a number of times
 
 
 
@@ -100,7 +107,68 @@ arrayName.shift(); --> will remove the first item in the array
 
 #Objects:
 
+const = object {         --> the curly brackets mean its an object
+
+}
+
+
+#Object notes from class:
+
+const dane = {
+  firstName: 'dane'
+  favoriteFoods = ['pulled pork', 'beer', 'potato chips']
+}
+
+log (dane.firstName); will show dane
+
+log (dane.favoriteFoods[0]); --> should log pulled pork
+
+
+you can do array of objects:
+
+const dane = {
+  firstName: 'dane'
+  favoriteFoods = [
+  {main: 'pulled pork', drink: 'beer', side: 'potato chips'}
+  ]
+}
+
+log (dane.favoriteFoods[0].main); --> should log what?????
+
+
+you could do:
+
+const dane = {
+  firstName: 'dane'
+  favoriteFoods = [
+  {main: 'pulled pork', drink: 'beer', side: 'potato chips'}
+  {main: 'french onion soup', drink: 'burgandy', side: 'baked potato'}
+  ]
+}
+
+function sayHello() {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 #jQuery:
+
+
+
+
+document ready is ready after the html tag.So that is why the logs can be out of order
